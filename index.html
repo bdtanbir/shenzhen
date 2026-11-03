@@ -112,9 +112,14 @@
     <section class="mt-16">
       <div class="mb-7 flex flex-wrap items-end justify-between gap-3">
         <div><p class="hand text-2xl font-bold text-orange-700">🧭 Getting there</p><h2 class="display mt-2 text-3xl font-bold">Kunming → Shenzhen 🚄</h2></div>
-        <span class="rounded-full bg-teal-50 px-4 py-2 text-sm font-bold text-teal-800">High-speed train preferred</span>
+        <span class="rounded-full bg-teal-50 px-4 py-2 text-sm font-bold text-teal-800">3 travel options</span>
       </div>
-      <div class="rounded-3xl bg-white p-6 shadow-sm sm:p-8">
+      <div class="mb-4 flex flex-wrap gap-2" role="tablist" aria-label="Travel plans">
+        <button id="tab-1" role="tab" aria-selected="true" aria-controls="plan-1" class="route-tab rounded-full bg-teal-700 px-4 py-3 text-sm font-bold text-white">Plan 1 · High-speed train</button>
+        <button id="tab-2" role="tab" aria-selected="false" aria-controls="plan-2" tabindex="-1" class="route-tab rounded-full bg-white px-4 py-3 text-sm font-bold text-slate-700">Plan 2 · Budget train</button>
+        <button id="tab-3" role="tab" aria-selected="false" aria-controls="plan-3" tabindex="-1" class="route-tab rounded-full bg-white px-4 py-3 text-sm font-bold text-slate-700">Plan 3 · Direct flight</button>
+      </div>
+      <div id="plan-1" role="tabpanel" aria-labelledby="tab-1" class="rounded-3xl bg-white p-6 shadow-sm sm:p-8">
         <div class="-mx-6 -mt-6 mb-6 flex items-center justify-between rounded-t-3xl bg-orange-500 px-6 py-2 text-xs font-bold text-white sm:-mx-8 sm:-mt-8 sm:px-8"><span>🎫 BOARDING PASS</span><span>19 NOV 2026 · 🌏 Yunnan → Guangdong</span></div>
         <div class="grid gap-5 sm:grid-cols-[1fr_auto_1fr] sm:items-center">
           <div><p class="text-xs font-bold uppercase tracking-widest text-slate-400">Departure</p><h3 class="mt-2 text-2xl font-extrabold">Kunming South</h3><p class="mt-1 text-sm text-slate-500">昆明南站</p></div>
@@ -128,6 +133,30 @@
         </div>
         <p class="hand mt-5 text-2xl font-bold text-orange-500">Window seats, please! 🪟 Snacks packed? 🥜 Power bank? 🔋</p>
         <p class="mt-2 text-xs leading-6 text-slate-500">Times, train numbers and fares are planning estimates only. Check the exact 19 Nov 2026 timetable and ticket availability before booking. Search trains on <a class="font-bold text-teal-700 underline" href="https://www.trip.com/trains/china/route/kunming-to-shenzhen/" target="_blank" rel="noopener">Trip.com</a>.</p>
+      </div>
+      <div id="plan-2" role="tabpanel" aria-labelledby="tab-2" hidden class="rounded-3xl bg-white p-6 shadow-sm sm:p-8">
+        <p class="text-xs font-bold uppercase tracking-widest text-orange-600">🚆 Plan 2 · Budget train</p>
+        <h3 class="display mt-3 text-2xl font-bold">Lijiang → Kunming → Shenzhen East</h3>
+        <p class="mt-3 text-sm leading-6 text-slate-600">A lower-cost option using conventional trains and potentially a bus connection. This route starts in Lijiang and takes substantially longer.</p>
+        <div class="mt-6 grid gap-3 sm:grid-cols-3">
+          <div class="rounded-2xl bg-slate-50 p-4"><p class="text-xs text-slate-500">Travel time</p><p class="mt-1 font-extrabold">About 38 hours</p></div>
+          <div class="rounded-2xl bg-slate-50 p-4"><p class="text-xs text-slate-500">Estimated fare</p><p class="mt-1 font-extrabold">¥315–674 / person</p></div>
+          <div class="rounded-2xl bg-slate-50 p-4"><p class="text-xs text-slate-500">For 4 adults</p><p class="mt-1 font-extrabold">¥1,260–2,696</p></div>
+        </div>
+        <p class="mt-5 text-sm leading-6 text-orange-700">Leave earlier if you want time to explore Shenzhen on the afternoon of 19 November. Check connections, schedules and fares before booking.</p>
+        <a class="mt-4 inline-block text-sm font-bold text-teal-700 underline" href="https://www.12306.cn/en/" target="_blank" rel="noopener">Search China Railway 12306 ↗</a>
+      </div>
+      <div id="plan-3" role="tabpanel" aria-labelledby="tab-3" hidden class="rounded-3xl bg-white p-6 shadow-sm sm:p-8">
+        <p class="text-xs font-bold uppercase tracking-widest text-orange-600">✈️ Plan 3 · Direct flight</p>
+        <h3 class="display mt-3 text-2xl font-bold">Lijiang Sanyi (LJG) → Shenzhen Bao'an (SZX)</h3>
+        <p class="mt-3 text-sm leading-6 text-slate-600">Fly directly from Lijiang to Shenzhen. Allow extra time for airport transfers and check-in.</p>
+        <div class="mt-6 grid gap-3 sm:grid-cols-3">
+          <div class="rounded-2xl bg-slate-50 p-4"><p class="text-xs text-slate-500">Flight time</p><p class="mt-1 font-extrabold">About 2 hours 25 minutes</p></div>
+          <div class="rounded-2xl bg-slate-50 p-4"><p class="text-xs text-slate-500">Estimated fare</p><p class="mt-1 font-extrabold">US$124–200 / person</p></div>
+          <div class="rounded-2xl bg-slate-50 p-4"><p class="text-xs text-slate-500">For 4 adults</p><p class="mt-1 font-extrabold">US$496–800</p><p class="mt-1 text-xs text-slate-500">Approximately ৳61,000–98,000</p></div>
+        </div>
+        <p class="mt-5 text-sm leading-6 text-slate-600">The fare for 19 November is not confirmed; baggage may cost extra. Check flight availability and the total before booking.</p>
+        <a class="mt-4 inline-block text-sm font-bold text-teal-700 underline" href="https://www.trip.com/flights/lijiang-to-shenzhen/airfares-ljg-szx/" target="_blank" rel="noopener">Search flights on Trip.com ↗</a>
       </div>
     </section>
 
@@ -237,5 +266,30 @@
       <p class="no-print mt-3 text-xs text-slate-400">To share this HTML file, send the downloaded file itself. Images and fonts load from the internet.</p>
     </footer>
   </main>
+  <script>
+    const routeTabs = Array.from(document.querySelectorAll('.route-tab'));
+    function selectRouteTab(tab) {
+      routeTabs.forEach((item) => {
+        const selected = item === tab;
+        item.setAttribute('aria-selected', String(selected));
+        item.tabIndex = selected ? 0 : -1;
+        item.classList.toggle('bg-teal-700', selected);
+        item.classList.toggle('text-white', selected);
+        item.classList.toggle('bg-white', !selected);
+        item.classList.toggle('text-slate-700', !selected);
+        document.getElementById(item.getAttribute('aria-controls')).hidden = !selected;
+      });
+    }
+    routeTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => selectRouteTab(tab));
+      tab.addEventListener('keydown', (event) => {
+        if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+        event.preventDefault();
+        const next = event.key === 'Home' ? 0 : event.key === 'End' ? routeTabs.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + routeTabs.length) % routeTabs.length;
+        selectRouteTab(routeTabs[next]);
+        routeTabs[next].focus();
+      });
+    });
+  </script>
 </body>
 </html>
